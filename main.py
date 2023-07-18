@@ -9,7 +9,7 @@ import math
 
 coordinatesFile = "ADD_HERE_THE_FILE_WITH_THE_CENTROIDS.xlsx";
 #The coordinatesFile must have at least 3 columns with the following information:(code,longitude,latitude)
-maxNumberOfCoordinatesPerGroup = 2;
+maxNumberOfCoordinatesPerGroup = n;
 """
 The maxNumberOfCoordinatesPerGroup must be defined so that all groups have the same number of coordinates. 
 For example, if you have 180 coordinates, the maxNumberOfCoordinatesPerGroup 36 (resulting in 5 groups of 36) 
@@ -20,6 +20,7 @@ outputFile = "ADD_HERE_THE_OUTPUT_FILE.xlsx";
 
 
 #CODE
+
 file = pd.read_excel(coordinatesFile);
 data = pd.DataFrame(file)
 data2 = data.to_numpy()
@@ -66,7 +67,7 @@ for o in range(numberOfGroups):
         originCoo = ','.join(map(str, [originLon, originLat]));
         originCodes.append(originID);
         originCoordinates = ';'.join(map(str, [originCoordinates, originCoo]));
-        sourceIndex = ';'.join(map(str, [sourceIndex, I]));
+        sourceIndex = ';'.join(map(str, [sourceIndex, i]));
         i = i+1;
     originCoordinates = originCoordinates[1:];
     sourceIndex = sourceIndex[1:];
@@ -85,7 +86,7 @@ for o in range(numberOfGroups):
             destCoo = ','.join(map(str, [destLon, destLat]));
             destinationCodes.append(destID);
             destinationCoordinates = ';'.join(map(str, [destinationCoordinates, destCoo]));
-            destinationIndex = ';'.join(map(str, [destinationIndex, I]));
+            destinationIndex = ';'.join(map(str, [destinationIndex, i]));
             i = i + 1;
         destinationIndex = destinationIndex[1:];
         link = inicio + originCoordinates+destinationCoordinates+sources+sourceIndex+destinations+destinationIndex+fim;
