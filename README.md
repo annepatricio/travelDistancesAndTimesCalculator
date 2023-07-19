@@ -1,5 +1,14 @@
 # routeCalculator
-....
+
+## Description
+
+This project is a simple calculator that allows you to calculate the distance and duration of a trip between a set of geographic coordinates using the OSMR API.
+
+
+
+
+
+
 #INPUTS
 
 coordinatesFile = "ADD_HERE_THE_FILE_WITH_THE_CENTROIDS.xlsx"
