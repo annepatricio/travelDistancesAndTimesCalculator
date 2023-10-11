@@ -2,9 +2,9 @@
 
 ## Description
 
-This project is a simple calculator that allows you to calculate the distance and duration of a trip between a set of geographic coordinates using the OSMR API.
+This project is a simple calculator that allows you to calculate the distance and duration of a trip between a set of geographic coordinates using the OSMR API. 
 
-# Inputs
+## Inputs
 
 | Input  | Description |
 | ------------- | ------------- |
