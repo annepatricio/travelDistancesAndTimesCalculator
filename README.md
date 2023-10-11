@@ -1,18 +1,15 @@
-# routeCalculator
+# Travel distances and times calculator
 
 ## Description
 
 This project is a simple calculator that allows you to calculate the distance and duration of a trip between a set of geographic coordinates using the OSMR API.
 
-
-
-
-
-
 #INPUTS
 
 coordinatesFile = "ADD_HERE_THE_FILE_WITH_THE_CENTROIDS.xlsx"
+
 #The coordinatesFile must have at least 3 columns with the following information:(code,longitude,latitude)
+
 maxNumberOfCoordinatesPerGroup = n
 """
 The maxNumberOfCoordinatesPerGroup must be defined so that all groups have the same number of coordinates. 
